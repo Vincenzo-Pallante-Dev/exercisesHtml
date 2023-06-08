@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>FORM</h1>
+      <form action="get">
+
+        <!-- email -->
+        <label for="usermail">Mail</label>
+        <input type="email" name="usermail" id="usermail" placeholder="your@mail.com" required>
+
+        <!-- password -->
+        <label for="password">Create a Password</label>
+        <input type="password" name="password" id="password" placeholder="my password" maxlength="10" required>
+
+        <!-- Name and Lastname -->
+        <label for="username">Put here your name and lastname</label>
+        <input type="text" name="username" id="username" placeholder="Luca Verdi" required>
+
+        <!-- Date of birth -->
+        <label for="data">Date of birth</label>
+        <input type="date" name="data" id="data" value="data" required>
+
+        <!-- Telephone number -->
+        <label for="telephonenumber">Telephone number</label>
+        <input type="text" name="number" id="number" placeholder="3310000000" maxlength="10" minlength="8" pattern="[0-9\s]{10}" required>
+
+        <!-- Plans type radio -->
+        <h2>Choose your Plan!</h2>
+        <label for="freeplan">Free Plan / 00$</label>
+        <input type="radio" name="plan" id="freeplan" value="freeplan" required>
+        <label for="firstplan">First Plan / 50$</label>
+        <input type="radio" name="plan" id="firstplan" value="firstplan" required>
+        <label for="secondplan">Second Plan / 100$</label>
+        <input type="radio" name="plan" id="secondplan" value="secondplan" required>
+        <label for="thirdplan">Third Plan / 150$</label>
+        <input type="radio" name="plan" id="thirdplan" value="thirdplan" required>
+        
+
+        <!-- Pro Plan type checkbox -->
+        <label for="proplan"> Pro Plan / 500$</label>
+        <input type="checkbox" name="check" id="check" value="check" required>
+
+        <!-- Credit card number -->
+        <h3>Add your credit card details</h3>
+        <label for="card">Credit Card Number</label>
+        <input type="text" name="creditcard" id="creditcard" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" minlength="13" pattern="[0-9\s]{13}" required>
+
+        <!-- CVC -->
+        <label for="cvc">CVC</label>
+        <input type="text" name="cardcvc" id="cardcvc" placeholder="***" maxlength="3" minlength="3" pattern="[0-9]{3}" required>
+
+        <!-- Expiration date -->
+        <label for="dataexp">Expiration date</label>
+        <input type="date" name="dataex" id="dataex" value="dataex" required>
+
+        <br>
+        <br>
+        <!-- Billing Address -->
+        <label for="address">Billing Address</label>
+        <input type="text" name="addr" id="addr" placeholder="Street /Square">
+
+        <!-- Submit -->
+        <input type="submit" value="submit">
+        
+
+
+
+      </form>
+    </main>
+  </body>
+</html>
